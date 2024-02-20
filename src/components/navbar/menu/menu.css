@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap");
+.menubaroper {
+  height: 100vh;
+  width: 400px;
+  background-color: #5d8834;
+  position: absolute;
+  right: 0;
+  z-index: 99;
+  transition: all 0.6s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 0 0 0;
+  gap: 30px;
+}
+.menubaroper .removebutton {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  border: none;
+  outline: none;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.menubaroper .removebutton i {
+  font-size: 20px;
+  font-weight: bold;
+}
+.menubaroper .removebutton:hover {
+  background: transparent;
+  box-shadow: 0px 0px 4px #343a40;
+  color: #fff;
+}
+.menubaroper .imges img {
+  width: 230px;
+}
+.menubaroper .lists ul {
+  list-style: none;
+  width: 250px;
+}
+.menubaroper .lists ul li {
+  padding: 7px;
+}
+.menubaroper .lists ul li .border-active {
+  border: 1px solid #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.menubaroper .lists ul li .border-active:hover {
+  background-color: blueviolet;
+}
+.menubaroper .lists ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+}
+.menubaroper .lists ul li a i {
+  font-size: 15px;
+  font-weight: 600;
+}
+.menubaroper .lists ul li .sub-menuopen {
+  margin-top: 10px;
+  overflow: hidden;
+  border: 1px solid #fff;
+  transition: 0.5s;
+  color: #e3ec91;
+}
+.menubaroper .lists ul li .sub-menuopen2 {
+  margin-top: 10px;
+  overflow: hidden;
+  border: 1px solid #fff;
+  transition: 0.5s;
+  color: #e3ec91;
+}
+
+@media (max-width: 400px) {
+  .menubaroper {
+    width: 300px;
+    min-height: 100vh;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 60px 0 30px 0;
+    gap: 6px;
+  }
+  .menubaroper .imges img {
+    width: 200px;
+  }
+  .menubaroper .lists ul {
+    list-style: none;
+    width: 250px;
+  }
+  .menubaroper .lists ul li {
+    padding: 7px;
+  }
+  .menubaroper .lists ul li a i {
+    font-size: 15px;
+    font-weight: 600;
+  }
+}/*# sourceMappingURL=menu.css.map */

@@ -1,0 +1,141 @@
+@import "../../styles/global.scss";
+.footer {
+  .footer-container {
+    width: 100%;
+    min-width: 300px;
+    margin: 300px auto 0;
+    .footer-content {
+      background-image: linear-gradient($green, $green),
+        url("https://solplant.netlify.app/images/home/article/buying-cars.png");
+      width: 100%;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      .footer-top-content {
+        position: absolute;
+        width: 80%;
+        height: 50vh;
+        left: 50%;
+        transform: translate(-50%);
+        background-color: $white;
+        top: -30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .footer-top-text {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 50px;
+          .foote1 {
+            width: 100%;
+            align-items: center;
+            display: flex;
+            gap: 25px;
+            h2 {
+              padding: 10px 0;
+              font-family: $playfair;
+            }
+            span {
+              font-family: $playfair;
+              font-size: 1rem;
+              font-weight: 300;
+            }
+            i {
+              font-size: 60px;
+              font-weight: 600;
+              cursor: pointer;
+              color: $green;
+            }
+          }
+        }
+      }
+      .footer-footer {
+        padding-top: 200px;
+        max-width: 1200px;
+        margin: auto;
+        .main-footer {
+          display: grid;
+          grid-template-columns: 1fr 200px 240px 300px;
+          grid-gap: 10px;
+          padding-bottom: 70px;
+          div {
+            h1 {
+              color: $white;
+              font-weight: 400;
+              padding-bottom: 40px;
+              font-family: $mon;
+            }
+            ul {
+              list-style: none;
+              line-height: 30px;
+              padding-top: 18px;
+              li {
+                font-family: $mon;
+                font-size: 16px;
+                font-weight: 400;
+                color: $white;
+                display: flex;
+                gap: 10px;
+                align-items: center;
+              }
+            }
+          }
+          div:nth-child(1) {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            img {
+              width: 200px;
+              object-fit: cover;
+              padding-bottom: 30px;
+            }
+            p {
+              font-family: $mon;
+              font-size: 16px;
+              color: $white;
+              line-height: 30px;
+              margin: 0;
+              padding: 0;
+            }
+            .footer-social-icons {
+              display: flex;
+              color: $white;
+              gap: 10px;
+              i {
+                transition: 0.5s;
+                font-size: 1.3rem;
+                font-weight: 600;
+                font-family: $mon;
+                cursor: pointer;
+              }
+              i:hover {
+                color: yellow;
+              }
+            }
+          }
+        }
+        .footer-bottom-hr {
+          border-top: 1px solid $white;
+          margin-top: 30px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 60px 0;
+          .title {
+            color: $white;
+            font-family: $poppins;
+            font-size: 1rem;
+          }
+          .paymentcards {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            img {
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}

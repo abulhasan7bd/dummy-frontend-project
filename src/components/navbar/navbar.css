@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap");
+nav {
+  width: 100%;
+}
+nav .navbar {
+  display: flex;
+  max-width: 1200px;
+  min-width: 300px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 16vh;
+  margin: auto;
+  font-family: "Poppins", sans-serif;
+}
+nav .navbar .nav__logo {
+  width: 280px;
+  height: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+nav .navbar .nav__logo img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 200px;
+}
+nav .navbar .nav__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  height: 100%;
+}
+nav .navbar .nav__list .menubar {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  box-shadow: 0px 0px 1px #343a40;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  transition: 0.4s;
+}
+nav .navbar .nav__list .menubar i {
+  font-weight: 600;
+  font-size: 20px;
+}
+nav .navbar .nav__list .nav__links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  height: 100%;
+}
+nav .navbar .nav__list .nav__links li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+nav .navbar .nav__list .nav__links li:hover {
+  color: #5d8834;
+}
+nav .navbar .nav__list .nav__links li:hover i {
+  transform: rotate(180deg);
+}
+nav .navbar .nav__list .nav__links li:hover .submenu {
+  transform: scale(1);
+  display: block;
+}
+nav .navbar .nav__list .nav__links li a {
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #343a40;
+  transition: all 0.3s linear;
+}
+nav .navbar .nav__list .nav__links li a .submenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  text-align: left;
+  position: absolute;
+  display: none;
+  top: 100%;
+  width: 140px;
+  text-align: left;
+  transform: scale(0.8);
+  transition: all 0.5s;
+}
+nav .navbar .nav__list .nav__links li a .submenu li {
+  width: 100%;
+  text-align: left;
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #5d8834;
+  border-bottom: 1px solid #e3ec91;
+  transition: 0.3s ease-in-out;
+}
+nav .navbar .nav__list .nav__links li a .submenu li:hover {
+  background-color: #e3ec91;
+}
+nav .navbar .nav__list .nav__links li a i {
+  font-size: 20px;
+  font-weight: 500;
+  display: inline-block;
+  transition: 0.3s ease;
+}
+nav .navbar .nav__list .social__medialinks {
+  display: flex;
+  gap: 20px;
+}
+nav .navbar .nav__list .social__medialinks div {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  box-shadow: 0px 0px 1px #343a40;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  transition: 0.4s;
+}
+nav .navbar .nav__list .social__medialinks div span {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-weight: 500;
+  height: 20px;
+  width: 20px;
+  display: flex;
+  font-size: 12px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: #fff;
+  background-color: #5d8834;
+  transition: 0.4s;
+}
+nav .navbar .nav__list .social__medialinks div i {
+  font-size: 20px;
+  font-weight: 600;
+  color: #5d8834;
+}
+nav .navbar .nav__list .social__medialinks div:hover {
+  background-color: #5d8834;
+  color: #fff;
+}
+nav .navbar .nav__list .social__medialinks div:hover i {
+  color: #fff;
+}
+nav .navbar .nav__list .social__medialinks div:hover span {
+  background-color: #fff;
+  color: #5d8834;
+}
+
+@media (max-width: 1200px) {
+  nav {
+    width: 100%;
+  }
+  nav .navbar {
+    max-width: 1000px;
+  }
+  nav .navbar .nav__list .menubar i {
+    font-weight: 600;
+    font-size: 20px;
+  }
+}
+@media (max-width: 1000px) {
+  nav {
+    width: 100%;
+  }
+  nav .navbar {
+    max-width: 800px;
+  }
+  nav .navbar .nav__list .menubar i {
+    font-weight: 600;
+    font-size: 20px;
+  }
+}
+@media (max-width: 800px) {
+  nav {
+    width: 100%;
+  }
+  nav .navbar {
+    max-width: 700px;
+  }
+  nav .navbar .nav__list .menubar i {
+    font-weight: 600;
+    font-size: 20px;
+  }
+}
+@media (max-width: 700px) {
+  nav {
+    width: 100%;
+  }
+  nav .navbar {
+    max-width: 400px;
+    padding: 0 10px;
+  }
+  nav .navbar .nav__logo {
+    width: 280px;
+    height: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+  nav .navbar .nav__logo img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 150px;
+  }
+  nav .navbar .nav__list .menubar i {
+    font-weight: 600;
+    font-size: 20px;
+  }
+  nav .navbar .nav__list .social__medialinks {
+    gap: 10px;
+  }
+  nav .navbar .nav__list .social__medialinks div {
+    height: 40px;
+    width: 40px;
+  }
+  nav .navbar .nav__list .social__medialinks div span {
+    right: -4px;
+    top: -1px;
+    height: 15px;
+    width: 15px;
+  }
+}
+@media (max-width: 400px) {
+  nav {
+    width: 100%;
+  }
+  nav .navbar {
+    width: 100%;
+    padding: 0 10px;
+    min-width: 300px;
+  }
+  nav .navbar .nav__logo {
+    width: 100%;
+    height: 100%;
+  }
+  nav .navbar .nav__logo img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 120px;
+  }
+  nav .navbar .nav__list .menubar i {
+    font-weight: 600;
+    font-size: 20px;
+  }
+  nav .navbar .nav__list .social__medialinks {
+    gap: 10px;
+  }
+  nav .navbar .nav__list .social__medialinks div {
+    height: 30px;
+    width: 30px;
+  }
+  nav .navbar .nav__list .social__medialinks div span {
+    top: -5px;
+    right: -2px;
+    height: 15px;
+    width: 15px;
+  }
+  nav .navbar .nav__list .social__medialinks div i {
+    font-size: 16px;
+  }
+}/*# sourceMappingURL=navbar.css.map */
