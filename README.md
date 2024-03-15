@@ -1,10 +1,10 @@
 # Hero Cricket Club 2021
-<hr/>
+
 
 #React JS Based Application
 
 ## ##This is a player buying Application for the club.
-<hr/>
+
 
 Live Link: https://lucid-beaver-9a6936.netlify.app/
 
