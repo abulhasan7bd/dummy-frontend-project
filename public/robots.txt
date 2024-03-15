@@ -1,9 +1,0 @@
-# https://www.robotstxt.org/robotstxt.html
-User-agent: *
-Disallow:
-
-
-
-
-
-https://solplant.netlify.app/images/home/article/buying-cars.png
